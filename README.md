@@ -9,8 +9,16 @@ Essa biblioteca gera dados fake e conseguimos popular bases para realizarmos tra
 | local  | Gerar dados localmente                        |
 | package | Lib necessária para criar o AWS Lambda Layer  |
 
+Instalar a lib utilizando pip:
+```bash
+pip install Faker
+```
+
 - Local: <br> 
     Para gerar os dados localmente será necessário ter instalado awscli e configurado as secrets da AWS.
+  ```bash
+  pip install awscli
+  ```
 - Lambda: <br>
     Para gerar os dados via Lambda será necessário primeiro criar a Layer (package) e depois executar a Lambda.
     O zip está na pasta package, basta fazer o upload do zip diretamente ou adicionar no bucket e fazer o apontamento.
